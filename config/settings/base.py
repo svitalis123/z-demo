@@ -18,6 +18,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # Third party
     'rest_framework',
+    'drf_spectacular',
     # Local
     'accounts',
     'classroom',
@@ -81,6 +82,18 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
     ),
+    'DEFAULT_SCHEMA_CLASS': (
+        'drf_spectacular.openapi.AutoSchema'
+    ),
+}
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Classroom Feedback API',
+    'DESCRIPTION': 'JWT auth and role-based access '
+        'control demo with Instructor, Student, '
+        'and Observer roles.',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
 }
 
 SIMPLE_JWT = {
