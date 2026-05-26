@@ -6,7 +6,7 @@ session on authentication and authorization.
 
 ## Live Demo
 
-**URL:** https://zindua.vitalismutwiri.com
+**URL:** https://zindua.vitalismutwiri.com/api/docs/
 
 ## Demo Accounts
 
